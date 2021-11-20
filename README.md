@@ -1,10 +1,12 @@
 TP CAPTEUR
 
-Connection sur la carte Nucleo STM32 :
-    Pour utiliser le capteur BMP280, nous avons utilisé la liaison I2C1 : 
+Pour utiliser le capteur BMP280, nous avons utilisé la liaison I2C1 :
+  - SCL = PB6
+  - SDA = PB7
+  - qsdqqsdzzqdz 
        - SCL : PB6
        - SDA : PB7
-    Pour utiliser la liaison série avec la carte Raspberry, nous utilisons USART3 :
+Pour utiliser la liaison série avec la carte Raspberry, nous utilisons USART3 :
        -  TX : PC4
        -  RX : PC5
 
