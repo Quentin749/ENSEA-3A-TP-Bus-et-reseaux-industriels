@@ -16,7 +16,7 @@ Nous avons travaillé avec la Raspberry Pi 0 - 1. Avec pour adresse IP 192.168.8
        - Identifiant : user
        - Password    : password
 
-Connection sur notre serveur : http://192.168.88.220:5000/path 
+Connection sur notre serveur : http://192.168.88.220:5000/<path> 
 
 
 Ce qui est fonctionnel :
