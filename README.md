@@ -5,15 +5,18 @@ Connection sur la carte Nucleo STM32 :
        - SCL : PB6
        - SDA : PB7
   - Pour utiliser la liaison série avec la carte Raspberry, nous utilisons USART3 :
-       -  TX : PC4
-       -  RX : PC5
+       -  USART3_TX : PC4
+       -  USART3_RX : PC5
+  - Pour utiliser le moteur pas à pas, on a utilisé la liaison CAN1
+       - CAN1_TX : PB9
+       - CAN1_RX : PB8
 
 Nous avons travaillé avec la Raspberry Pi 0 - 1. Avec pour adresse IP 192.168.88.220
-Identifiant : user
-Password    : password
+  - Pour s'y connecter, on a définit : 
+       - Identifiant : user
+       - Password    : password
 
-Connection sur notre serveur : 
-	http://192.168.88.220:5000/path 
+Connection sur notre serveur : http://192.168.88.220:5000/path 
 
 
 Ce qui est fonctionnel :
