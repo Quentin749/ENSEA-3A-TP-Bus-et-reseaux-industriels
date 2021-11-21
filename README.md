@@ -16,6 +16,9 @@ Nous avons travaillé avec la Raspberry Pi 0 - 1. Avec pour adresse IP 192.168.8
        - Identifiant : user
        - Password    : password
 
+Pour lancer le serveur on se place dans le dossier dev_server et on entre la commande suivant :
+   - $ FLASK_APP=hello.py FLASK_ENV=development flask run --host 0.0.0.0
+
 Connection sur notre serveur : http://192.168.88.220:5000/api/welcome 
 
 
