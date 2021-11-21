@@ -32,7 +32,7 @@ Ce qui est fonctionnel :
    Nous avons réalisé sur le serveur la fonction avec la méthode POST (avec path = /api/scale/<int:K>) pour mettre à jour l'angle, mais n'avons eu le temps de vérifier son bon fonctionnement.
    La valeur pour commander le moteur pas à pas est égale à température * K/100
 
-Pour vérifier le bon fonctionnement du capteur de température et de pression on peut soit utiliser le minicom de la Raspberry pour envoyer GET_T ou GET_P, soit regarder sur la liaison UART2 la valeur de la température et de la pression qui s'affiche juste après un RESET.
+Pour vérifier le bon fonctionnement du capteur de température et de pression sans utiliser le serveur, on peut soit utiliser le minicom de la Raspberry pour envoyer GET_T ou GET_P, soit regarder sur la liaison UART2 la valeur de la température et de la pression qui s'affiche juste après un RESET.
 De plus, initialement l'angle du moteur pas à pas est égal à la température. 
 
 Ce qui n'est pas fonctionnel :
