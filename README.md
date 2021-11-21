@@ -40,3 +40,4 @@ Ce qui n'est pas fonctionnel :
    - Les DELETE pour supprimer des valeurs stockées n'ont pas été réalisés non plus.
    - L'accéléromètre n'a pas été utilisé.
 
+Attention à bien éteindre la Raspberry Pi avant de la débrancher : sudo shutdown -h now
