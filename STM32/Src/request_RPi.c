@@ -35,7 +35,7 @@ uint8_t RPi_GET_P(){
 }
 
 uint8_t RPi_SET_K(int coeff){
-	K = coeff;
+	K = coeff/100;
 
 	return 0;
 }

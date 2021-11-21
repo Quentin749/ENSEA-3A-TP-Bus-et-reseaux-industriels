@@ -154,7 +154,7 @@ int main(void)
 	/* USER CODE BEGIN WHILE */
 	while (1)
 	{
-		//		MOTOR_angle(temp_S32*K);
+				MOTOR_angle(temp_S32*K);
 		//		HAL_Delay(500);
 		//		MOTOR_angle(0);
 		//		HAL_Delay(500);
@@ -181,7 +181,7 @@ int main(void)
 						buff_K[i] = buf_Pi[i+5];
 					}
 					buf_Pi[5] = '\0';
-					if(strcmp(buf_Pi,"SETK=")){
+					if(strcmp(buf_Pi,"SETK=") == 0){
 						RPi_SET_K(atoi(buff_K));
 					}
 				}
