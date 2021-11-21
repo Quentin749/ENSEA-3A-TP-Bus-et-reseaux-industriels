@@ -23,12 +23,14 @@ Connection sur notre serveur : http://192.168.88.220:5000/api/welcome
 
 
 Ce qui est fonctionnel :
+  - A noter que pour que le serveur fonctionne bien il faut compiler la carte STM32 avant de lancer le serveur.
   - On peut réaliser un POST (avec path = /api/temp/) pour stocker la valeur de la température dans un tableau.
    Cette valeur est retournée pour vérifier sa cohérence.
   - On peut réaliser un POST (avec path = /api/pres/) pour stocker la valeur de la pression dans un tableau.
    Cette valeur est retournée pour vérifier sa cohérence.
   - Sur la STM32, la commande du moteur pas à pas fonctionne bien, à l'aide des fonctions, MOTOR_init() et MOTOR_angle(int angle).
    Nous avons réalisé sur le serveur la fonction avec la méthode POST (avec path = /api/scale/<int:K>) pour mettre à jour l'angle, mais n'avons eu le temps de vérifier son bon fonctionnement.
+   La valeur pour commander le moteur pas à pas est égale à température * K/100
 
 Ce qui n'est pas fonctionnel :
    - Les GET n'ont pas été réalisés pour récupérer les valeurs stockées de la température et de la pression.
